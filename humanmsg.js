@@ -24,7 +24,7 @@ var humanMsg = {
 			humanMsg.msgOpacity = parseFloat(msgOpacity);
 
 		// Inject the message structure
-		jQuery(appendTo).append('<div id="'+humanMsg.msgID+'" class="humanMsg"><div class="round"></div><p></p><div class="round"></div></div> <div id="'+humanMsg.logID+'"><p>'+logName+'</p><ul></ul></div>')
+		jQuery(appendTo).append('<div id="'+humanMsg.msgID+'" class="humanMsg"><p></p></div> <div id="'+humanMsg.logID+'"><p>'+logName+'</p><ul></ul></div>')
 		
 		jQuery('#'+humanMsg.logID+' p').click( function() {
 			jQuery(this).siblings('ul').slideToggle('50')
